@@ -7,4 +7,27 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="titulo_salvar">Salvar</string>
     <string name="title_cad_componente">Adicionar Componente</string>
+    <string-array name="opcoes_comp">
+        <item>Selecione</item>
+        <item>IGBT</item>
+        <item>MosFET</item>
+        <item>Transistor</item>
+        <item>CI</item>
+        <item>SCR</item>
+        <item>Ponte</item>
+        <item>Regulador</item>
+        <item>Outros</item>
+    </string-array>
+    <string-array name="opcoes_tensao">
+        <item>Selecione</item>
+        <item>0-50V</item>
+        <item>50-100V</item>
+        <item>100-150V</item>
+        <item>150-200V</item>
+        <item>200-250V</item>
+        <item>250-300V</item>
+        <item>300-350V</item>
+        <item>350-400V</item>
+        <item>Outros</item>
+    </string-array>
 </resources>

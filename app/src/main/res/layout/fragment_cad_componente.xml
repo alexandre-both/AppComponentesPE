@@ -23,7 +23,8 @@
             <Spinner
                 android:id="@+id/spTipoComponente"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="48dp"
+                android:entries="@array/opcoes_comp" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -49,13 +50,11 @@
                 android:layout_height="wrap_content"
                 android:text="Tensão de Operação" />
 
-            <EditText
-                android:id="@+id/etTensaoOP"
+            <Spinner
+                android:id="@+id/spTensaoOperacao"
                 android:layout_width="match_parent"
-                android:layout_height="67dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Ex. 50 V " />
+                android:layout_height="50dp"
+                android:entries="@array/opcoes_tensao" />
 
             <Button
                 android:id="@+id/btSalvarComp"
@@ -63,6 +62,10 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/purple_500"
                 android:text="@string/titulo_salvar" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="73dp" />
 
         </LinearLayout>
     </ScrollView>
