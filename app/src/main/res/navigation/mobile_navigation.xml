@@ -22,4 +22,9 @@
         android:name="br.dev.alexandreboth.mobile.componentespe.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_cad_componente"
+        android:name="br.dev.alexandreboth.mobile.componentespe.ui.componente.CadComponenteFragment"
+        android:label="@string/title_cad_componente"
+        tools:layout="@layout/fragment_cad_componente" />
 </navigation>
