@@ -16,7 +16,8 @@
         <item>SCR</item>
         <item>Ponte</item>
         <item>Regulador</item>
-        <item>Outros</item>
+        <item>Diodo</item>
+        <item>Outro</item>
     </string-array>
     <string-array name="opcoes_tensao">
         <item>Selecione</item>

@@ -2,6 +2,8 @@ package br.dev.alexandreboth.mobile.componentespe.ui.componente;
 
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -21,4 +23,6 @@ public class CadComponenteFragment extends Fragment {
         this.view = inflater.inflate(R.layout.fragment_cad_componente, container, false);
         return this.view;
     }
+
+
 }
