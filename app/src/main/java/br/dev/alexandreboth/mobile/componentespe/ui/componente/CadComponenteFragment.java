@@ -53,7 +53,9 @@ public class CadComponenteFragment extends Fragment implements View.OnClickListe
                 Componente componente = new Componente();
                 componente.setNome(this.etCompNome.getText().toString());
                 componente.setTipo(this.spCompTipo.getSelectedItemPosition());
-
+                componente.setTensao(this.spCompTensao.getSelectedItemPosition());
+                componente.setGaveta(this.spCompGaveta.getSelectedItemPosition());
+                componente.setEspaco(this.spCompEspaco.getSelectedItemPosition());
 
                 break;
         }
