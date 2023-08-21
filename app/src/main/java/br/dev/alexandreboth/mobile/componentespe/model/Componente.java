@@ -9,6 +9,8 @@ public class Componente {
     private int tipo;
     private String nome;
     private int tensao;
+    private int gaveta;
+    private int espaco;
 
 
     //JSON
@@ -30,6 +32,14 @@ public class Componente {
             numero = (int) jp.get("tensao");
             this.setTensao(numero);
 
+            //gaveta do componente
+            numero = (int) jp.get("gaveta");
+            this.setGaveta(numero);
+
+            //espaco do componente
+            numero = (int) jp.get("espaco");
+            this.setEspaco(numero);
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -41,6 +51,8 @@ public class Componente {
         this.setTipo(0);
         this.setNome("");
         this.setTensao(0);
+        this.setGaveta(0);
+        this.setEspaco(0);
 
     }
 
@@ -52,6 +64,8 @@ public class Componente {
             json.put("tipo", this.tipo);
             json.put("nome", this.nome);
             json.put("tensao", this.tensao);
+            json.put("gaveta", this.gaveta);
+            json.put("espaco", this.espaco);
 
         } catch (JSONException e) {
             e.printStackTrace();
@@ -97,14 +111,40 @@ public class Componente {
     //tensao
     public void setTensao(int ten){
         if (ten >= 0 && ten <= 9){
-            this.tipo = ten;
+            this.tensao = ten;
         } else {
-            this.tipo = 9;
+            this.tensao = 9;
         }
     }
 
     public int getTensao(){
         return this.tensao;
     }
+
+    public void setGaveta(int gav){
+        if (gav >= 0 && gav <= 9){
+            this.gaveta = gav;
+        } else {
+            this.gaveta = 0;
+        }
+    }
+
+    public int getGaveta(){
+        return this.gaveta;
+    }
+
+    public void setEspaco(int espa){
+        if (espa >= 0 && espa <= 9){
+            this.espaco = espa;
+        } else {
+            this.espaco = 0;
+        }
+    }
+
+    public int getEspaco(){
+        return this.espaco;
+    }
+
+
 
 }

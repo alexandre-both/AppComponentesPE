@@ -12,25 +12,25 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
-                android:layout_height="34dp"
+                android:layout_height="wrap_content"
                 android:text="Nome do componente" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName"
                 android:layout_width="match_parent"
-                android:layout_height="74dp"
+                android:layout_height="62dp"
                 android:ems="10"
                 android:inputType="textPersonName" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
+                android:layout_height="wrap_content"
                 android:text="Selecione o tipo do componente" />
 
             <Spinner
@@ -38,24 +38,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:entries="@array/opcoes_comp" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Se for MosFET ou TBJ selecione NPN ou PNP" />
-
-            <CheckBox
-                android:id="@+id/cbNPN"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="NPN" />
-
-            <CheckBox
-                android:id="@+id/cbPNP"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="PNP" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -69,10 +51,34 @@
                 android:layout_height="50dp"
                 android:entries="@array/opcoes_tensao" />
 
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gaveta" />
+
+            <Spinner
+                android:id="@+id/spGaveta"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:entries="@array/opcoes_gaveta" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Espaço" />
+
+            <Spinner
+                android:id="@+id/spEspaco"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:entries="@array/opcoes_espaco" />
+
             <Button
                 android:id="@+id/btSalvarComp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="69dp"
                 android:backgroundTint="@color/purple_500"
                 android:text="@string/titulo_salvar" />
 
