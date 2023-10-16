@@ -18,26 +18,26 @@ public class Componente {
     public Componente (JSONObject jp) {
         try {
             //Id
-            Integer numero = (int) jp.get("id");
+            Integer numero = (int) jp.get("idcomponente");
             this.setId(numero);
 
             //tipo do componente
-            numero = (int) jp.get("tipo");
+            numero = (int) jp.get("idtipo");
             this.setTipo(numero);
 
             //nome do componente
-            this.setNome((String) jp.get("nome"));
+            this.setNome((String) jp.get("nmcomponente"));
 
             //tensao do componente
-            numero = (int) jp.get("tensao");
+            numero = (int) jp.get("idtensao");
             this.setTensao(numero);
 
             //gaveta do componente
-            numero = (int) jp.get("gaveta");
+            numero = (int) jp.get("idgaveta");
             this.setGaveta(numero);
 
             //espaco do componente
-            numero = (int) jp.get("espaco");
+            numero = (int) jp.get("idespaco");
             this.setEspaco(numero);
 
         } catch (JSONException e) {
@@ -60,12 +60,12 @@ public class Componente {
     public JSONObject toJsonObject() {
         JSONObject json = new JSONObject();
         try {
-            json.put("id", this.id);
-            json.put("tipo", this.tipo);
-            json.put("nome", this.nome);
-            json.put("tensao", this.tensao);
-            json.put("gaveta", this.gaveta);
-            json.put("espaco", this.espaco);
+            json.put("idcomponente", this.id);
+            json.put("idtipo", this.tipo);
+            json.put("nmcomponente", this.nome);
+            json.put("idtensao", this.tensao);
+            json.put("idgaveta", this.gaveta);
+            json.put("idespaco", this.espaco);
 
         } catch (JSONException e) {
             e.printStackTrace();
