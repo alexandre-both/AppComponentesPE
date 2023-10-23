@@ -27,4 +27,9 @@
         android:name="br.dev.alexandreboth.mobile.componentespe.ui.componente.CadComponenteFragment"
         android:label="@string/title_cad_componente"
         tools:layout="@layout/fragment_cad_componente" />
+    <fragment
+        android:id="@+id/navigation_con_componente"
+        android:name="br.dev.alexandreboth.mobile.componentespe.ui.componente.ConComponenteFragment"
+        android:label="@string/title_con_componente"
+        tools:layout="@layout/fragment_con_componente_list" />
 </navigation>

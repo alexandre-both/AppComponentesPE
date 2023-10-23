@@ -7,6 +7,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="titulo_salvar">Salvar</string>
     <string name="title_cad_componente">Adicionar Componente</string>
+    <string name="title_con_componente">Consultar Componente</string>
     <string-array name="opcoes_comp">
         <item>Selecione</item>
         <item>IGBT</item>
