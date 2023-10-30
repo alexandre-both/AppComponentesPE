@@ -31,7 +31,7 @@ import br.dev.alexandreboth.mobile.componentespe.model.Componente;
 
 public class CadComponenteFragment extends Fragment implements View.OnClickListener, Response.ErrorListener, Response.Listener {
 
-   private View view = null;
+    private View view = null;
 
     private EditText etCompNome;
     private Spinner spCompTipo;
@@ -71,7 +71,7 @@ public class CadComponenteFragment extends Fragment implements View.OnClickListe
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-        //verificando se é o botão salvar
+            //verificando se é o botão salvar
             case R.id.btSalvarComp:
                 //instanciando o objeto de negocio
                 Componente componente = new Componente();
@@ -132,8 +132,5 @@ public class CadComponenteFragment extends Fragment implements View.OnClickListe
         } catch (JSONException e) {
             throw new RuntimeException(e);
         }
-
-
-
     }
 }
