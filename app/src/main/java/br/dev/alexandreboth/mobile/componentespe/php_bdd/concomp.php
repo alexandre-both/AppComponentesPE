@@ -56,7 +56,7 @@ if (!empty($jsonParam)) {
     JOIN tensao t
     on c.idtensao = t.idtensao
     JOIN tipo tp
-    on c.idtipo = tp.idtipo";
+    on c.idtipo = tp.idtipo $whereClause";
 
 // Set the content type to JSON
     header('Content-Type: application/json');
