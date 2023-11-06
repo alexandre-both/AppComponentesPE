@@ -37,7 +37,8 @@ public class ConComponenteRecyclerViewAdapter extends RecyclerView.Adapter<ConCo
         holder.mContentView.setText(mValues.get(position).getNome() +
                 " Esp. " + mValues.get(position).getDeEspaco() +
                 " Gav. " + mValues.get(position).getDeGaveta() +
-                " Tp. " + mValues.get(position).getDeTipo());
+                " Tp. " + mValues.get(position).getDeTipo() +
+                " Ten. " + mValues.get(position).getDeTensao());
     }
 
     @Override
