@@ -12,33 +12,82 @@ public class Componente {
     private int gaveta;
     private int espaco;
 
+    //consulta
+
+    String deEspaco;
+    String deTensao;
+    String deTipo;
+    String deGaveta;
+
+    public String getDeEspaco() {
+        return deEspaco;
+    }
+
+    public void setDeEspaco(String deEspaco) {
+        this.deEspaco = deEspaco;
+    }
+
+    public String getDeTensao() {
+        return deTensao;
+    }
+
+    public void setDeTensao(String deTensao) {
+        this.deTensao = deTensao;
+    }
+
+    public String getDeTipo() {
+        return deTipo;
+    }
+
+    public void setDeTipo(String deTipo) {
+        this.deTipo = deTipo;
+    }
+
+    public String getDeGaveta() {
+        return deGaveta;
+    }
+
+    public void setDeGaveta(String deGaveta) {
+        this.deGaveta = deGaveta;
+    }
 
     //JSON
     //CONSTRUTOR - inicializa atributos de um arquivo JSon
     public Componente (JSONObject jp) {
         try {
             //Id
-            Integer numero = (int) jp.get("idcomponente");
+            Integer numero = (int) jp.getInt("idcomponente");
             this.setId(numero);
 
+            //nome do componente
+            this.setNome((String) jp.getString("nmcomponente"));
+
+            this.setDeEspaco(jp.getString("deespaco"));
+
+            this.setDeGaveta(jp.getString("degaveta"));
+
+            this.setDeTensao(jp.getString("detensao"));
+
+            this.setDeTipo(jp.getString("detipo"));
+
+            /*
             //tipo do componente
-            numero = (int) jp.get("idtipo");
+            numero = (int) jp.getInt("idtipo");
             this.setTipo(numero);
 
-            //nome do componente
-            this.setNome((String) jp.get("nmcomponente"));
-
             //tensao do componente
-            numero = (int) jp.get("idtensao");
+            numero = (int) jp.getInt("idtensao");
             this.setTensao(numero);
 
             //gaveta do componente
-            numero = (int) jp.get("idgaveta");
+            numero = (int) jp.getInt("idgaveta");
             this.setGaveta(numero);
 
             //espaco do componente
-            numero = (int) jp.get("idespaco");
+            numero = (int) jp.getInt("idespaco");
             this.setEspaco(numero);
+            */
+
 
         } catch (JSONException e) {
             e.printStackTrace();

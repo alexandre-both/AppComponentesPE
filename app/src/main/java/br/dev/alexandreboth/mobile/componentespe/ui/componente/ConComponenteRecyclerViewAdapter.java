@@ -34,7 +34,10 @@ public class ConComponenteRecyclerViewAdapter extends RecyclerView.Adapter<ConCo
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
         holder.mIdView.setText(String.valueOf(mValues.get(position).getId()));
-        holder.mContentView.setText(mValues.get(position).getNome());
+        holder.mContentView.setText(mValues.get(position).getNome() +
+                " Esp. " + mValues.get(position).getDeEspaco() +
+                " Gav. " + mValues.get(position).getDeGaveta() +
+                " Tp. " + mValues.get(position).getDeTipo());
     }
 
     @Override

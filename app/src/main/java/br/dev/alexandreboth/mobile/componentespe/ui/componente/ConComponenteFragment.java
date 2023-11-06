@@ -89,13 +89,13 @@ public class ConComponenteFragment extends Fragment implements Response.ErrorLis
         //objeto com informações de filtro da consulta
 
         Componente componente = new Componente();
-        componente.setId(1);
+        componente.setId(0);
         componente.setNome("IRF8010");
 
         //incluindo objeto no array de envio
         jsonArray.put(componente.toJsonObject());
         //requisição para o Rest Server
-        jsonArrayReq = new JsonArrayRequest(Request.Method.GET,
+        jsonArrayReq = new JsonArrayRequest(Request.Method.POST,
                 "http://10.0.2.2/concomp.php",
                 jsonArray, this, this);
         //mando executar a requisção na fila do sistema
