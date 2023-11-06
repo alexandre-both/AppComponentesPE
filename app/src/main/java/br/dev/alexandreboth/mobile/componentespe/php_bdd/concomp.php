@@ -49,14 +49,14 @@ if (!empty($jsonParam)) {
     //$consulta = "SELECT idcomponente, nmcomponente, idtipo, idtensao, idespaco, idgaveta FROM componente $whereClause";
 
     $consulta = "SELECT idcomponente, nmcomponente, detipo,  detensao,  deespaco,  degaveta 
-FROM componente c join espaco e
-on c.idespaco = e.idespaco
-JOIN gaveta g
-on c.idgaveta = g.idgaveta
-JOIN tensao t 
-on c.idtensao = t.idtensao
-JOIN tipo tp
-on c.idtipo = tp.idtipo";
+    FROM componente c join espaco e
+    on c.idespaco = e.idespaco
+    JOIN gaveta g
+    on c.idgaveta = g.idgaveta
+    JOIN tensao t
+    on c.idtensao = t.idtensao
+    JOIN tipo tp
+    on c.idtipo = tp.idtipo";
 
 // Set the content type to JSON
     header('Content-Type: application/json');

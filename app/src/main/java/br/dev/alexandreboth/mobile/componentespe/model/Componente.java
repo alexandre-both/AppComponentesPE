@@ -14,10 +14,10 @@ public class Componente {
 
     //consulta
 
-    String deEspaco;
-    String deTensao;
-    String deTipo;
-    String deGaveta;
+    private String deEspaco;
+    private String deTensao;
+    private String deTipo;
+    private String deGaveta;
 
     public String getDeEspaco() {
         return deEspaco;
