@@ -1,0 +1,90 @@
+<meta charset="UTF-8">
+
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: purple;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0f38a8;
+}
+
+div {
+  border-radius: 5px;
+  background-color: lightblue;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Cadastro de Componentes</h3>
+
+<div>
+  <form action="cadComponente" method="post">
+    <label>Nome do componente</label>
+    <input type="text" name="nome" placeholder="IR2110..">
+
+    
+    <label>Tipo</label>
+    <select name="tipo">
+      <option value="1">CI</option>
+      <option value="2">MosFET</option>
+      <option value="3">IGBT</option>
+      <option value="4">Transitor</option>
+      <option value="5">Diodo</option>
+    </select>
+
+    <label>Tensão</label>
+    <select name="tensao">
+      <option value="1">0-50V</option>
+      <option value="2">50-100V</option>
+      <option value="3">100-150V</option>
+      <option value="4">150-200V</option>
+      <option value="5">200-250V</option>
+    </select>
+  
+  	<label>Gaveta</label>
+    <select name="gaveta">
+      <option value="1">A</option>
+      <option value="2">B</option>
+      <option value="3">C</option>
+      <option value="4">D</option>
+      <option value="5">E</option>
+    </select> 
+    
+    <label>Espaço</label>
+    <select name="gaveta">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select> 
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+
+
